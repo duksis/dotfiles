@@ -28,6 +28,8 @@ task :install do
       replace_file(file, target_name)
     end
   end
+  system 'git config --edit --global'
+  system 'reload'
 end
 
 task :default => :install
