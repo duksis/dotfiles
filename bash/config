@@ -1,6 +1,8 @@
-for file in ~/.bash/functions/*; do
-  source $file
-done
+if [ -f ~/.bash/functions/* ]; then
+  for file in ~/.bash/functions/*; do
+    source $file
+  done
+fi
 
 source ~/.bash/aliases
 
