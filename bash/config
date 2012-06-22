@@ -1,3 +1,7 @@
+for file in ~/.bash/functions/*; do
+  source $file
+done
+
 source ~/.bash/aliases
 
 source ~/.bash/completions/git
