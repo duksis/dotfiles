@@ -1,3 +1,5 @@
+#!/usr/bin/bash
+
 if [ -f ~/.bash/functions/* ]; then
   for file in ~/.bash/functions/*; do
     source $file

@@ -1,0 +1,8 @@
+// global config can be found
+// ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/Default/Preferences.sublime-settings
+{
+   "color_scheme": "Packages/User/Railscasts.tmTheme",
+   "tab_size": 2,
+   "translate_tabs_to_spaces": true,
+   "trim_trailing_white_space_on_save": true
+}
