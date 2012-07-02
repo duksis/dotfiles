@@ -25,3 +25,6 @@ alias lh='ls -la | grep ":[0-9]* \."' # show only hidden files
 alias g='git'
 alias gpll='git pull'
 alias gpsh='git push'
+
+# guard
+alias guard='bundle exec guard'
