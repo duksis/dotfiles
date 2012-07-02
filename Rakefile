@@ -28,17 +28,8 @@ task :install do
       replace_file(file, target_name)
     end
   end
-  system 'if [ -d ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User ]; then
-    rm -fr ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User
-    ln -s ~/.sublime/User ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User
-  fi
-  ln -s ~/.sublime/Sass ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/Sass
-  ln -s ~/.sublime/Ruby\ Haml ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/Ruby\ Haml
-  ln -s ~/.sublime/RubyTest ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/RubyTest
-  ln -s ~/.sublime/alternative_autocomplete.py ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/alternative_autocomplete.py
-  '
   system 'git config --edit --global'
-  system 'reload'
+  system 'source ~/.bashrc'
 end
 
 task :default => :install
