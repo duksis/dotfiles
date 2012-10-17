@@ -1,12 +1,7 @@
-// Preference cheatsheet 
-//~/Library/Application\ Support/Sublime\ Text\ 2/Packages/Default/Preferences.sublime-settings
 {
-  // The number of spaces a tab is considered equal to
   "tab_size": 2,
 
-  // Set to true to insert spaces when tab is pressed
   "translate_tabs_to_spaces": true,
 
-  // Trims white space added by auto_indent when moving the caret off the line.
   "trim_automatic_white_space": true
 }
