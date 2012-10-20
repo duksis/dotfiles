@@ -1,6 +1,7 @@
 {
 	"installed_packages":
 	[
+		"Markdown Preview",
 		"Package Control",
 		"RSpec",
 		"SublimeLinter"
