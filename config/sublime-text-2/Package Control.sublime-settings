@@ -2,6 +2,10 @@
 	"installed_packages":
 	[
 		"ApacheConf.tmLanguage",
+		"CoffeeScript",
+		"DetectSyntax",
+		"Git",
+		"LESS",
 		"Markdown Preview",
 		"Package Control",
 		"RSpec",
