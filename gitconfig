@@ -9,7 +9,7 @@
   branch = auto
 [core]
   excludesfile = ~/.gitignore
-  editor = subl -n -w
+  editor = vim
   autocrlf = input
 [apply]
   whitespace = nowarn
