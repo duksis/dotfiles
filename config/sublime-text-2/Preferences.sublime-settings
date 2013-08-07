@@ -1,5 +1,23 @@
 {
+	"binary_file_patterns":
+	[
+		"tmp/*",
+		"*.jpg",
+		"*.jpeg",
+		"*.png",
+		"*.gif",
+		"*.ttf",
+		"*.tga",
+		"*.dds",
+		"*.ico",
+		"*.eot",
+		"*.pdf",
+		"*.swf",
+		"*.jar",
+		"*.zip"
+	],
 	"ensure_newline_at_eof_on_save": true,
+	"font_size": 12.0,
 	"ignored_packages":
 	[
 		"Vintage"
@@ -7,5 +25,6 @@
 	"tab_size": 2,
 	"translate_tabs_to_spaces": true,
 	"trim_automatic_white_space": true,
-	"trim_trailing_white_space_on_save": true
+	"trim_trailing_white_space_on_save": true,
+	"word_wrap": false
 }
