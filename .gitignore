@@ -7,3 +7,4 @@ config/sublime-text-2/Default\ (Linux).sublime-keymap
 config/sublime-text-2/Default\ (Windows).sublime-keymap
 config/sublime-text-2/Package\ Control.last-run
 config/sublime-text-2/DetectSyntax.sublime-settings
+weechat/irc.conf
