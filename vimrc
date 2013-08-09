@@ -7,6 +7,7 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle'
 Bundle 'wincent/Command-T'
+Bundle 'vim-coffee-script'
 
 syntax enable
 set encoding=utf-8
