@@ -8,6 +8,8 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'wincent/Command-T'
 Bundle 'vim-coffee-script'
+Bundle 'elixir-lang/vim-elixir'
+Bundle 'oscarh/vimerl'
 
 syntax enable
 set encoding=utf-8
@@ -36,4 +38,11 @@ set hlsearch                    " highlight matches
 set incsearch                   " incremental searching
 set ignorecase                  " searches are case insensitive...
 set smartcase                   " ... unless they contain at least one capital letter
+
+"" We don't want to use the arrow keys for now. Let's think about a better
+""  usage later
+nnoremap  <Up> <NOP>
+nnoremap  <Down> <NOP>
+nnoremap  <Left> <NOP>
+nnoremap  <Right> <NOP>
 
