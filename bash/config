@@ -43,6 +43,8 @@ export SVN_EDITOR=$EDITOR
 export LC_CTYPE=UTF-8
 export LANG=en_US.UTF-8
 
+eval "$(exenv init -)"
+
 ### Bash http://blog.macromates.com/2008/working-with-history-in-bash/
 export HISTCONTROL=erasedups
 export HISTSIZE=10000
