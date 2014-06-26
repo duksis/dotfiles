@@ -6,7 +6,7 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 Bundle 'gmarik/vundle'
-Bundle 'wincent/Command-T'
+Bundle 'kien/ctrlp.vim'
 Bundle 'vim-coffee-script'
 Bundle 'elixir-lang/vim-elixir'
 Bundle 'oscarh/vimerl'
