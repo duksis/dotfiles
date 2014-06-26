@@ -46,3 +46,14 @@ nnoremap  <Down> <NOP>
 nnoremap  <Left> <NOP>
 nnoremap  <Right> <NOP>
 
+" The Silver Searcher
+" http://robots.thoughtbot.com/faster-grepping-in-vim
+if executable('ag')
+  " Use ag over grep
+  set grepprg=ag\ --nogroup\ --nocolor
+
+endif
+
+" bind K to grep word under cursor
+nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
+
