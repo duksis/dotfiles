@@ -1,26 +1,18 @@
+" Explicitly informing that we're using 256-color terminals.
+let &t_Co=256
 set nocompatible                " choose no compatibility with legacy vi
 
-filetype off                   " required!
+" Include plugins via Vundle. For details see vundle.vim .
+source ~/.vim/vundle.vim
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-
-Bundle 'gmarik/vundle'
-Bundle 'kien/ctrlp.vim'
-Bundle 'vim-coffee-script'
-Bundle 'elixir-lang/vim-elixir'
-Bundle 'oscarh/vimerl'
-
-syntax enable
 set encoding=utf-8
-set showcmd                     " display incomplete commands
-filetype plugin indent on       " load file type plugins + indentation
+
+colorscheme zenburn
 
 "" Whitespace
 set nowrap                      " don't wrap lines
 set tabstop=2 shiftwidth=2      " a tab is two spaces (or set this to 4)
 set expandtab                   " use spaces, not tabs (optional)
-set backspace=indent,eol,start  " backspace through everything in insert mode
 match ErrorMsg '\t'             " highlight tabs
 "match ErrorMsg '\s\+$'          " highlight trailing whitespaces
 
@@ -35,7 +27,6 @@ autocmd BufWritePre     * :call TrimWhiteSpace()
 
 "" Searching
 set hlsearch                    " highlight matches
-set incsearch                   " incremental searching
 set ignorecase                  " searches are case insensitive...
 set smartcase                   " ... unless they contain at least one capital letter
 
@@ -57,3 +48,5 @@ endif
 " bind K to grep word under cursor
 nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 
+" the . command for visual mode
+xnoremap :normal .<CR>
