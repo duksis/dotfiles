@@ -57,3 +57,7 @@ export LSCOLORS=ExFxCxDxBxegedabagacad
 ### Oracle
 
 ### MySql
+
+### Redis
+export REDIS_PATH=/usr/local/bin/redis-server
+

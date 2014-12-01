@@ -7,7 +7,7 @@ source ~/.vim/vundle.vim
 
 set encoding=utf-8
 
-colorscheme zenburn
+colorscheme pablo
 
 "" Whitespace
 set nowrap                      " don't wrap lines
@@ -50,3 +50,6 @@ nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
 
 " the . command for visual mode
 xnoremap :normal .<CR>
+
+" rspec current file
+noremap ,r :! rspec %<CR>
