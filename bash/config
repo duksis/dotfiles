@@ -23,8 +23,6 @@ complete -C ~/.bash/completions/project -o default c
 complete -C ~/.bash/completions/project -o default cm
 complete -C ~/.bash/completions/capistrano -o default cap
 
-source $(brew --prefix nvm)/nvm.sh
-
 # prompt: [ root ~ master +? ] % cmd
 _user_root() { [ $USER == "root" ] && printf 'root '; }
 _rvm_prompt() { local s=$(rvm-prompt v g); printf "${s:+ ${s}}"; }
