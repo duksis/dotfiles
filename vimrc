@@ -6,6 +6,7 @@ set nocompatible                " choose no compatibility with legacy vi
 source ~/.vim/vundle.vim
 
 set encoding=utf-8
+set clipboard=unnamed
 
 colorscheme pablo
 
