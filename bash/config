@@ -59,3 +59,5 @@ export LSCOLORS=ExFxCxDxBxegedabagacad
 ### Redis
 export REDIS_PATH=/usr/local/bin/redis-server
 
+### bash
+export PROMPT_COMMAND='history -a' # makes bash to update history before each promt
