@@ -1,5 +1,6 @@
 # changing directory to code project
 function c { cd ~/code/$1; }
+function macdown { open -a MacDown "$1"; }
 
 # misc
 alias reload='. ~/.bash_profile'
