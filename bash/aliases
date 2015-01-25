@@ -29,3 +29,6 @@ alias gpsh='git push'
 
 # guard
 alias guard='bundle exec guard'
+
+# sudo
+alias please='sudo'
