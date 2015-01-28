@@ -28,7 +28,7 @@ task :install do
       replace_file(file, target_name)
     end
   end
-  system 'git config --edit --global'
+  system 'git config --edit --global' unless replace_all
   system 'bash ~/.bashrc'
 end
 
