@@ -3,6 +3,7 @@
   email = duksis@gmail.com
 [alias]
   co = checkout
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 [color]
   diff = auto
   status = auto
@@ -13,8 +14,6 @@
   autocrlf = false
 [apply]
   whitespace = nowarn
-[format]
-  pretty = %C(yellow)%h%Creset %s %C(red)(%an, %cr)%Creset
 [push]
-	default = current
+  default = current
 [git-pair]
