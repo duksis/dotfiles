@@ -54,3 +54,6 @@ xnoremap :normal .<CR>
 
 " rspec current file
 noremap ,r :! rspec %<CR>
+
+" make vim to save crontab
+autocmd filetype crontab setlocal nobackup nowritebackup

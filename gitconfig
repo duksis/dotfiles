@@ -1,6 +1,7 @@
 [user]
-  name = Hugo Duksis
-  email = duksis@gmail.com
+	name = Hugo Duksis
+	email = duksis@gmail.com
+	signingkey = BB28FDED
 [alias]
   co = checkout
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
@@ -17,3 +18,5 @@
 [push]
   default = current
 [git-pair]
+[commit]
+	gpgsign = true

@@ -30,6 +30,8 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'vim-coffee-script'
 Bundle 'elixir-lang/vim-elixir'
 Bundle 'oscarh/vimerl'
+Bundle 'wting/rust.vim'
+Bundle 'mustache/vim-mustache-handlebars'
 
 if s:bootstrap
   silent BundleInstall
