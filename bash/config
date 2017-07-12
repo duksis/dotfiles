@@ -15,13 +15,11 @@ complete -C ~/.bash/completions/project -o default c
 
 # prompt: [ root ~ master +? ] % cmd
 _user_root() { [ $USER == "root" ] && printf 'root '; }
-_rvm_prompt() { local s=$(rvm-prompt v g); printf "${s:+ ${s}}"; }
-export PS1="\[\e[0;35m\]\u\[\e[33m\]@\[\e[36m\]\h \$(_user_root)\[\e[33m\]\w\e[31m\]\$(__git_ps1)\[\e[36m\]\$(_rvm_prompt)\n\[\e[33m\]\[\e[32;1m\]$\[\e[0m\] "
+export PS1="\[\e[0;35m\]\u\[\e[33m\]@\[\e[36m\]\h \$(_user_root)\[\e[33m\]\w\e[31m\]\$(__git_ps1)\[\e[36m\]\n\[\e[33m\]\[\e[32;1m\]$\[\e[0m\] "
 
 export PATH=$HOME/bin:$HOME/.gem/ruby/1.8/bin:/opt/local/bin:/opt/local/sbin:/sw/bin:/usr/local/bin:$PATH
 export PATH=$PATH:/usr/local/mysql/bin
 export PATH=/Users/duksis/Library/Haskell/bin:~/.cabal/bin:$PATH
-export PATH=$HOME/.exenv/bin:$PATH
 export PATH=$PATH:$HOME/bin
 
 ### Rust the stuff
@@ -35,8 +33,6 @@ export SVN_EDITOR=$EDITOR
 export LC_CTYPE=UTF-8
 export LANG=en_US.UTF-8
 
-eval "$(exenv init -)"
-
 ### Bash http://blog.macromates.com/2008/working-with-history-in-bash/
 export HISTCONTROL=erasedups
 export HISTSIZE=10000
@@ -45,11 +41,6 @@ shopt -s histappend
 ### COLORS
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
-
-#### nvm
-### Oracle
-
-### MySql
 
 ### Redis
 export REDIS_PATH=/usr/local/bin/redis-server

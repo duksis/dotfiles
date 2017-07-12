@@ -5,11 +5,13 @@
 
 source ~/.bash/config
 
+# added by travis gem
+[ -f /Users/duksis/.travis/travis.sh ] && source /Users/duksis/.travis/travis.sh
 
-if [ -s ~/.rvm/scripts/rvm ] ; then
-  source ~/.rvm/scripts/rvm
-  # Force rvm to reload when iTerm2 "Resuse Previous Tab's Directory" is turned on
-  cd .
-fi
+PATH="/Users/duksis/perl5/bin${PATH+:}${PATH}"; export PATH;
+PERL5LIB="/Users/duksis/perl5/lib/perl5${PERL5LIB+:}${PERL5LIB}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="/Users/duksis/perl5${PERL_LOCAL_LIB_ROOT+:}${PERL_LOCAL_LIB_ROOT}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"/Users/duksis/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/Users/duksis/perl5"; export PERL_MM_OPT;
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+eval $(ssh-agent)
