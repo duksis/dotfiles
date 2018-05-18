@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-if [ -f ~/.bash/functions/* ]; then
+if [ -d ~/.bash/functions ]; then
   for file in ~/.bash/functions/*; do
     source $file
   done
@@ -17,7 +17,7 @@ complete -C ~/.bash/completions/project -o default c
 _user_root() { [ $USER == "root" ] && printf 'root '; }
 export PS1="\[\e[0;35m\]\u\[\e[33m\]@\[\e[36m\]\h \$(_user_root)\[\e[33m\]\w\e[31m\]\$(__git_ps1)\[\e[36m\]\n\[\e[33m\]\[\e[32;1m\]$\[\e[0m\] "
 
-export PATH=$HOME/bin:$HOME/.gem/ruby/1.8/bin:/opt/local/bin:/opt/local/sbin:/sw/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:$HOME/.asdf/shims:/opt/local/bin:/opt/local/sbin:/sw/bin:/usr/local/bin:$PATH
 export PATH=$PATH:/usr/local/mysql/bin
 export PATH=/Users/duksis/Library/Haskell/bin:~/.cabal/bin:$PATH
 export PATH=$PATH:$HOME/bin
