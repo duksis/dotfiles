@@ -12,6 +12,7 @@ source ~/.bash/completions/git
 source ~/.bash/completions/bundler
 complete -C ~/.bash/completions/rake -o default rake
 complete -C ~/.bash/completions/project -o default c
+source <(kubectl completion bash)
 
 # prompt: [ root ~ master +? ] % cmd
 _user_root() { [ $USER == "root" ] && printf 'root '; }
