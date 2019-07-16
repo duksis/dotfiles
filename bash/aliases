@@ -13,6 +13,9 @@ alias k9='kill -9'
 function ka { kill $(ps xc | grep -wi "$*" | awk '{print $1}'); }
 function ka9 { kill -9 $(ps xc | grep -wi "$*" | awk '{print $1}'); }
 
+# Lock screen
+alias lock='/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend'
+
 # textmate
 function m { mate ${*:-.}; }
 
