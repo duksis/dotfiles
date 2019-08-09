@@ -19,6 +19,9 @@ alias lock='/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resourc
 # textmate
 function m { mate ${*:-.}; }
 
+# watch - enables usage of aliases within watch commands
+alias watch='watch -n1 '
+
 # ls
 alias l='ls -1'
 alias ll='ls -lh'
