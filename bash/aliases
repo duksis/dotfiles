@@ -16,6 +16,9 @@ function ka9 { kill -9 $(ps xc | grep -wi "$*" | awk '{print $1}'); }
 # Lock screen
 alias lock='/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resources/CGSession -suspend'
 
+# joke
+alias joke='wget "http://api.icndb.com/jokes/random" -qO- | jq -r .value.joke'
+
 # textmate
 function m { mate ${*:-.}; }
 
